@@ -1,0 +1,66 @@
+                           FFmpeg is a powerful and versatile open-source multimedia framework that allows you to record, convert, and stream audio and video files. It is a command-line tool that supports a wide range of codecs, formats, and filters. Here are some common ffmpeg commands and their uses:
+
+Convert Video Format:
+
+css
+Copy code
+ffmpeg -i input.mp4 output.avi
+This command converts a video from one format (e.g., MP4) to another format (e.g., AVI).
+
+Convert Audio Format:
+
+css
+Copy code
+ffmpeg -i input.mp3 output.wav
+This command converts an audio file from one format (e.g., MP3) to another format (e.g., WAV).
+
+Extract Audio from Video:
+
+css
+Copy code
+ffmpeg -i input.mp4 -vn -acodec copy output.mp3
+This command extracts the audio stream from a video file and saves it as an MP3 file.
+
+Trim/Cut Video:
+
+css
+Copy code
+ffmpeg -i input.mp4 -ss 00:00:30 -to 00:01:30 -c:v copy -c:a copy output.mp4
+This command trims a video from 30 seconds to 1 minute 30 seconds without re-encoding (fast and lossless).
+
+Resize Video:
+
+css
+Copy code
+ffmpeg -i input.mp4 -vf scale=1280:720 output.mp4
+This command resizes a video to a specific resolution (1280x720 in this example).
+
+Concatenate Videos:
+
+go
+Copy code
+ffmpeg -i "concat:input1.mp4|input2.mp4" -c copy output.mp4
+This command concatenates multiple video files (input1.mp4 and input2.mp4) into a single output.mp4 file.
+
+Add Watermark to Video:
+
+css
+Copy code
+ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=10:10" output.mp4
+This command overlays a watermark (watermark.png) on the input video at position (10, 10).
+
+Extract Frames from Video:
+
+css
+Copy code
+ffmpeg -i input.mp4 -r 1 -f image2 output_%03d.jpg
+This command extracts frames from a video at a rate of 1 frame per second and saves them as image files (output_001.jpg, output_002.jpg, etc.).
+
+Convert Video to GIF:
+
+lua
+Copy code
+ffmpeg -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos" output.gif
+This command converts a video to a GIF with a frame rate of 10 fps and a width of 320 pixels.
+
+These are just a few examples of the many things you can do with FFmpeg. The tool is incredibly flexible and can handle a wide range of multimedia operations. Make sure to refer to the official FFmpeg documentation and explore the various options and filters available to suit your specific needs.

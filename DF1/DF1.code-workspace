@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Exercises and Answers"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"limits": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "DF1"
+	}
+}

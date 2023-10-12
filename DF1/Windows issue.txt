@@ -1,0 +1,41 @@
+Windows issue.txt
+
+C:\WINDOWS\windowsupdate.log
+
+C:\WINDOWS\logs\cbs\cbs.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\FixDotNet.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\NetFxSetupEvents.txt
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_NetFxRepairTool_decompression_log.txt
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_dd_AspNetCoreSharedFramework___20230714105902.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_dd_AspNetCoreSharedFramework___20230714105902_000_AspNetCoreSharedFramework_x64.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_vsta_setup_(var.MajorVersion)_20230709223940.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_vsta_setup_(var.MajorVersion)_20230709223940_000_vsta_hostingcore_x86.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\dd_vsta_setup_(var.MajorVersion)_20230709223940_001_vsta_hostingcore_amd64.log
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\FixDotNet_HKCR_Installer.regdump
+
+C:\Users\TRANSF~1.DAV\AppData\Local\Temp\FixDotNet_HKLM_Installer.regdump
+
+******************************
+//Terminal以管理员运行：
+runas /user:Administrator "cmd"
+#Scan .NET 
+Type in the command: "SFC /SCANNOW".
+
+Wait for it to finish and view the message that is displayed:
+No corruptions with .NET if message is: "Windows Resource Protection did not find any integrity 
+violations." Corruptions repaired if message is: "Windows Resource Protection found corrupt files and 
+successfully repaired them. Details are included in the CBS.Log %WinDir%\Logs\CBS\CBS.log." 
+Test the Autodesk software again to see if the issue is now resolved. 
+Refer to Use the System File Checker tool to repair missing or corrupted system files 
+- Microsoft Support if message is: "Windows Resource Protection found corrupt files but was unable 
+to fix some of them. Details are included in the CBS.Log %WinDir%\Logs\CBS\CBS.log." 
+The OS may need to be reimaged to resolve the issue. 

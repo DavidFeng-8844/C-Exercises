@@ -1,0 +1,101 @@
+#9 Functions
+
+Task 3.
+a.
+char n_to_char(int);
+b.
+int digits(double,int);
+c.
+double* which(double* address1, double* address2);
+d.
+int random();
+
+Task4.
+int int_sum(int a, int b);
+
+int_sum(18,44);
+
+int int_sum(int a, int b){
+    return a + b;
+}
+
+Task5.
+replace the  data type of its parameters and the return type
+type to double 
+
+Task6.
+int alter(int *, int *);
+
+int x = 18, y = 44;
+alter (&x, &y);
+
+alter(int * x, int * y){
+
+  temp1 = *x + *y;
+  temp2 = *x - *y;
+  *x = temp1;
+  *y = temp2;
+
+}
+
+Task7.
+(1)The parameter is not specified with a type
+(2)The for loop falsely used the wrong variable
+
+Task8.
+
+int max(int, int, int);
+
+int a = 8, b =18, c =44;
+max(a, b, c);
+
+int max(int a, int b, int c){
+    if(a > b && a > c)
+    {
+    return a;
+    }
+    else if (b > a && b > c){
+    return b;
+    }
+    else{
+    return c;
+    }
+}
+
+Task9.
+a.
+int display(int );
+int inpt_lim(int);
+
+
+display(int No);
+inpt_lim(5, 0);
+
+int display (int){
+  printf("1) copy files     2) move files\n
+          3) remove files   4) quit\n
+          Enter the number of your choice");
+}
+
+int inpt_lim(int max, int min){ 
+  int inpt;
+  if (scanf("%d",  &inpt) == 1){
+    display ();
+    return inpt;
+  }
+  else if(scanf("%d", &inpt) != 1){
+    
+  }
+  
+
+
+}
+
+
+
+
+
+
+
+
+

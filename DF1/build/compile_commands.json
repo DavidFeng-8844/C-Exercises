@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/Coding-Files/C_C++/VSstudio_C/DF1/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\AMakelist.txt.dir\\main.c.obj -c D:\\Coding-Files\\C_C++\\VSstudio_C\\DF1\\main.c",
+  "file": "D:/Coding-Files/C_C++/VSstudio_C/DF1/main.c",
+  "output": "CMakeFiles/AMakelist.txt.dir/main.c.obj"
+},
+{
+  "directory": "D:/Coding-Files/C_C++/VSstudio_C/DF1/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\tempCodeRunnerFile.dir\\tempCodeRunnerFile.c.obj -c D:\\Coding-Files\\C_C++\\VSstudio_C\\DF1\\tempCodeRunnerFile.c",
+  "file": "D:/Coding-Files/C_C++/VSstudio_C/DF1/tempCodeRunnerFile.c",
+  "output": "CMakeFiles/tempCodeRunnerFile.dir/tempCodeRunnerFile.c.obj"
+},
+{
+  "directory": "D:/Coding-Files/C_C++/VSstudio_C/DF1/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\tempCodeRunnerFile.dir\\max.c.obj -c D:\\Coding-Files\\C_C++\\VSstudio_C\\DF1\\max.c",
+  "file": "D:/Coding-Files/C_C++/VSstudio_C/DF1/max.c",
+  "output": "CMakeFiles/tempCodeRunnerFile.dir/max.c.obj"
+}
+]
