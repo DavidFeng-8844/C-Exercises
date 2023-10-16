@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Repositories/C_C++/C_Exercises/DF1/Leeds-C/Week3",
-      "program": "d:/Repositories/C_C++/C_Exercises/DF1/Leeds-C/Week3/build/Debug/outDebug",
+      "cwd": "d:/Repositories/C_C++/C_Exercises/DF1/Leeds-C/Week6",
+      "program": "d:/Repositories/C_C++/C_Exercises/DF1/Leeds-C/Week6/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
