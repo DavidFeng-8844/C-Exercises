@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "windows-gcc-x86",
+            "name": "/usr/bin/gcc",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
