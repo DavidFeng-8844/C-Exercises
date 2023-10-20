@@ -3,8 +3,8 @@ int main (){
     FILE *input = fopen("inputfile.txt","w");
     fprintf(input,"suka\nnot suka");
     fclose(input);
-
     input = fopen("inputfile.txt","r");
+    
     FILE *output = fopen("outputfile.txt","w");
     fclose(output);
 
