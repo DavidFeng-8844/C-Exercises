@@ -4,7 +4,7 @@ int main (){
     FILE *output = fopen("outputfile.txt","w");
     fclose(output);
     output = fopen("outputfile.txt","a");
-    fprintf(output, "hello world by david\t");
+    fprintf(output, "hello world by david\n");
     fprintf(output, "This is a appended line\n");
    /* if(input == NULL && output == NULL) {
         printf("error opening file\n");
@@ -15,9 +15,15 @@ int main (){
     char iptstr[100];
     char optstr[100];
     fgets(iptstr, 100, input);
-    fgets(optstr, 100, output);
-    printf("The input string is: %s\n", iptstr);
-    printf("The output string is: %s\n", optstr);
+    while (fgets(optstr, 100, output))
+    {
+        printf("%s\n", optstr);    
+    }
+    printf("%s\n", iptstr);
     fclose(input);
     fclose(output);
+    FILE *nullfile = fopen("NULL.txt", "r");
+    if(nullfile == NULL){
+        printf("The file doesn't exists");
+    }
 }
