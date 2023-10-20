@@ -1,2 +1,3 @@
-# C-Primer-Plus-Programming-Exercises-And-Answers
-This repository includes all programming exercises and all the answers to these exercises in the book "C Primer Plus (6th)" written by Stephen Prata. Most answers are totally written by myself, and some are guided by the answers given by the book, and I have wrote a few statements for every exercise. Welcome to see these codes, leave your comments, and enjoy your time!
+# This is a Repository to store C exercises
+
+## The Coursework Repository is Here
