@@ -1,24 +1,23 @@
 #include <stdio.h> 
 int main (){
-    FILE *input = fopen("inputfile.txt","r");
+    FILE *input = fopen("inputfile.txt","w");
+    fprintf(input,"suka");
+    fclose(input);
+    input = fopen("inputfile.txt","r");
     FILE *output = fopen("outputfile.txt","w");
     fclose(output);
     output = fopen("outputfile.txt","a");
     fprintf(output, "hello world by david\n");
     fprintf(output, "This is a appended line\n");
-   /* if(input == NULL && output == NULL) {
-        printf("error opening file\n");
-        return 2;
-    }*/
     fclose(output);
     output = fopen("outputfile.txt", "r");
     char iptstr[100];
     char optstr[100];
-    fgets(iptstr, 100, input);
-    while (fgets(optstr, 100, output))
+    while(fgets(optstr, 100, output))
     {
         printf("%s\n", optstr);    
     }
+    fgets(iptstr, 100, input);
     if(iptstr != NULL){
         printf("%s\n", iptstr);
     }else{
