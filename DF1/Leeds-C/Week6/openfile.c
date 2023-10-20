@@ -19,7 +19,11 @@ int main (){
     {
         printf("%s\n", optstr);    
     }
-    printf("%s\n", iptstr);
+    if(iptstr != NULL){
+        printf("%s\n", iptstr);
+    }else{
+        printf("Input file is empty");
+    }
     fclose(input);
     fclose(output);
     FILE *nullfile = fopen("NULL.txt", "r");
