@@ -18,7 +18,7 @@ int main(void) {
 
     // Open input and output files
     in = fopen(inName, "w");
-    out = fopen(outName, "wb"); // Open the output file in binary mode
+    out = fopen(outName, "w"); // Open the output file in binary mode
 
     if (in == NULL || out == NULL) {
         printf("Failed to open input or output file.\n");
@@ -44,7 +44,7 @@ int main(void) {
     putc(d, out);
     fclose(out);
 
-    out = fopen(outName, "rb"); // Open the output file in binary mode for reading
+    out = fopen(outName, "r"); // Open the output file in binary mode for reading
 
     if (out == NULL) {
         printf("Failed to reopen the output file for reading.\n");
