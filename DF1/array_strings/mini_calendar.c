@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
-bool is_leap_year(int year){
-  if(year % 4 == 0){
+#define  IF_LEAP 1
+bool is_leap_year(int year){  //A leap year has to be divisible by 4 and NOT divisible by 100 
+  if(year % 4 == 0){          //except when the year is divisible by 400.
     if(year % 100 == 0){
       return true;
     }
@@ -46,15 +47,17 @@ int main() {
   int dd;
   int yy;
   int days_left_to_add;
-  /*printf("Please input a year between 1800 to 10000\n");
+  #if IF_LEAP
+  printf("Please input a year between 1800 to 10000\n");
   scanf("%i", &year);
   int lpy = is_leap_year(year);
   if(lpy == 0){
     printf("It is not a leap year\n");
   }else{
     printf("It is a leap year\n");
-  }*/
-  printf("Please input a year between 1800 and 10000 in the format dd mm yy and provide the number of days to add to this date\n");
+  }
+  #endif
+  printf("Please input a year in the format dd/mm/yy and provide the number of days to add to this date\n");
   scanf("%i %i %i %i", &dd, &mm, &yy, &days_left_to_add);
   add_days_to_date(&dd, &mm, &yy, days_left_to_add);
   printf("The date is: %i/%i/%i", dd, mm, yy);
