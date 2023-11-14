@@ -4,7 +4,6 @@
 // blanks, tabs, and newlines), storing the results in an array whose address is passed as an
 // argument.
 
-
 #include <stdio.h>
 #define LEN 10
 char * getnchar(char * str, int n);
@@ -38,7 +37,7 @@ char * getnchar(char * str, int n)
     }
     if (ch == EOF)
         return NULL;
-    else// if(ch == '\n') //It encounters a \n
+    else  // if(ch == '\n') //It encounters a \n
     {   
         str[i] = '\0';
         return str;
