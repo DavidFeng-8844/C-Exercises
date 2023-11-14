@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h> 
+#include <stdio.h> 
 #define STLEN 50
 void ftch_arr(int n, char * arr);
 

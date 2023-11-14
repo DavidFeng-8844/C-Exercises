@@ -38,8 +38,8 @@ char * getnchar(char * str, int n)
     }
     if (ch == EOF)
         return NULL;
-    else
-    {
+    else// if(ch == '\n') //It encounters a \n
+    {   
         str[i] = '\0';
         return str;
     }
