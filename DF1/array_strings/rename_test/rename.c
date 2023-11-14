@@ -20,11 +20,16 @@ void renameFilesInFolder(const char *folderPath) {
             continue;
         }
 
-        // Construct the full path of the file
-        char oldPath[256];
-        sprintf(oldPath, "%s/%s", folderPath, entry->d_name);
+        // Construct the full path of the file or subfolder
+        char fullPath[256];
+        sprintf(fullPath, "%s/%s", folderPath, entry->d_name);
 
-        // Replace spaces with underscores in the file name
+        // If the entry is a subfolder, recursively rename its contents
+        if (entry->d_type == DT_DIR) {
+            renameFilesInFolder(fullPath);
+        }
+
+        // Replace spaces with underscores in the file or folder name
         size_t len = strlen(entry->d_name);
         char *newName = (char *)malloc((len + 1) * sizeof(char));
 
@@ -38,13 +43,13 @@ void renameFilesInFolder(const char *folderPath) {
 
         newName[len] = '\0';
 
-        // Construct the new full path of the file
-        char newPath[256];
-        sprintf(newPath, "%s/%s", folderPath, newName);
+        // Construct the new full path of the file or folder
+        char newFullPath[256];
+        sprintf(newFullPath, "%s/%s", folderPath, newName);
 
-        // Rename the file
-        if (rename(oldPath, newPath) != 0) {
-            perror("Error renaming file");
+        // Rename the file or folder
+        if (rename(fullPath, newFullPath) != 0) {
+            perror("Error renaming file or folder");
             exit(EXIT_FAILURE);
         }
 
@@ -57,11 +62,11 @@ void renameFilesInFolder(const char *folderPath) {
 }
 
 int main() {
-    const char *folderPath = "rn_tst/"; // Replace with your folder path
+    const char *folderPath = "D:\\Repositories\\C_C++\\C-Exercises\\Exercises and Answers"; // Replace with your folder path
 
     renameFilesInFolder(folderPath);
 
-    printf("Files renamed successfully.\n");
+    printf("Files and folders renamed successfully.\n");
 
     return 0;
 }
