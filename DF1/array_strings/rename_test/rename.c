@@ -62,7 +62,7 @@ void renameFilesInFolder(const char *folderPath) {
 }
 
 int main() {
-    const char *folderPath = "D:\\Repositories\\C_C++\\C-Exercises\\Exercises and Answers"; // Replace with your folder path
+    const char *folderPath = "D:\\Repositories\\C_C++\\C-Exercises\\Exercises and Answers\\Chapter_12_Storage_Classes_Linkage_and_Memory_Management"; // Replace with your folder path
 
     renameFilesInFolder(folderPath);
 
