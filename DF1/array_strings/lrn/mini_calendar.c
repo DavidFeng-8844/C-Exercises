@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#define  IF_LEAP 1
+#define  IF_LEAP 0
 bool is_leap_year(int year){  //A leap year has to be divisible by 4 and NOT divisible by 100 
   if(year % 4 == 0){          //except when the year is divisible by 400.
     if(year % 100 == 0){
