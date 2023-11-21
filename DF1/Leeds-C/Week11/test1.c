@@ -1,5 +1,10 @@
 #include <stdio.h> 
+#define TEST 1
 int main(){
-    puts("Enter the radius of the circle again");
-    return 0;
+	int a = 3;
+	#if TEST 
+	char * test = "DavidMary";
+	printf("%.*s", a, test);
+	#endif
+	return 0;
 }
