@@ -1,4 +1,4 @@
-# C Notes 
+# MarkDown Notes 
 ## Pointer 
 
 ### 30/8/23
