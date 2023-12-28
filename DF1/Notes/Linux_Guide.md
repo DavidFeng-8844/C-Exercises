@@ -170,7 +170,7 @@ usermod 命令用于修改用户的属性，格式为“ usermod [选项] 用户
 
 
 ### 设备管理     
- 磁盘设备名  /dev/nvme0n1       分区设备名      /dev/nvme0n1p1  /dev/nvme0n1p2
+ 磁盘设备名  /dev/nvme0n1       分区设备名      /dev/nvme0n1p1  /dev/**nvme0n1p2**
                  /dev/sda                          /dev/sda1       /dev/sda2
      查找设备名   ls -l|grep nvme  
      文件系统装载设置文件     /etc/fstab
