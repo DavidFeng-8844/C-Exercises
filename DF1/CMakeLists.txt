@@ -6,3 +6,4 @@ enable_testing()
 
 #add_executable(AMakelist.txt main.c)
 #add_executable(tempCodeRunnerFile tempCodeRunnerFile.c max.c)
+add_executable(pwd ../tools/pwd.c)

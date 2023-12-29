@@ -26,6 +26,7 @@ D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/ContinuousTes
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/ContinuousCoverage.dir
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/ContinuousMemCheck.dir
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/ContinuousSubmit.dir
+D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/pwd.dir
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/test.dir
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

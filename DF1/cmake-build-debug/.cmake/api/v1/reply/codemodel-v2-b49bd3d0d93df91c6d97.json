@@ -42,7 +42,8 @@
 						24,
 						25,
 						26,
-						27
+						27,
+						28
 					]
 				}
 			],
@@ -84,7 +85,8 @@
 						24,
 						25,
 						26,
-						27
+						27,
+						28
 					]
 				}
 			],
@@ -284,6 +286,13 @@
 					"id" : "NightlyUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-NightlyUpdate-Debug-d3f6f955f647e2cb4d38.json",
 					"name" : "NightlyUpdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pwd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pwd-Debug-51778372bd2d6275fc83.json",
+					"name" : "pwd",
 					"projectIndex" : 0
 				}
 			]
