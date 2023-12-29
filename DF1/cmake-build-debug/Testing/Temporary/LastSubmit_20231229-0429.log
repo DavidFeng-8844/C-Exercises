@@ -1,8 +1,0 @@
-Upload files:
-0	Configure.xml
-1	Build.xml
-2	Done.xml
-	Upload file: D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/Testing/20231229-0429/Configure.xml to DavidsG15___Win32-ninja___20231229-0429-Continuous___XML___Configure.xml
-   Error when uploading file: D:/Repositories/C_C++/C-Exercises/DF1/cmake-build-debug/Testing/20231229-0429/Configure.xml
-   Error message was: URL rejected: No host part in the URL
-   Problems when submitting via HTTP
