@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
     // Generate a random password
     int length = 8;
     char *my_pwd = pwd_gntr(length, pwd);
-    puts(my_pwd);
+    //puts(my_pwd);
 
     free(my_pwd);  // Free the allocated memory
     return 0;
